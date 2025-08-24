@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星座探索 - JSファイル対応</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+        #controls {
+            position: absolute;
+            top: 60px;
+            left: 10px;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        button, select, label {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <select id="constellationSelect">
+            <option value="">星座を選択してください</option>
+        </select>
+        <label>
+            <input type="checkbox" id="cameraFocusToggle" checked>
+            北極星に焦点
+        </label>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+    <script src="stars.js"></script> <!-- stars.js を読み込み -->
+    <script src="starline.js"></script> <!-- starline.js を読み込み -->
+    <script src="script.js"></script> <!-- stars.js を読み込み -->
+    <script>
+
+    </script>
+</body>
+</html>
